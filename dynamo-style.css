@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e003a 0%, #3a1c71 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+.dynamo-bg {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    backdrop-filter: blur(2px);
+}
+header {
+    text-align: center;
+    padding: 3rem 1rem 1rem 1rem;
+}
+.dynamo-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 0.2em;
+    color: #ff00cc;
+    text-shadow: 0 4px 24px #000, 0 1px 0 #fff;
+    margin-bottom: 0.5rem;
+}
+.dynamo-tagline {
+    font-size: 1.3rem;
+    color: #fff;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.search-form input[type="text"] {
+    width: 350px;
+    padding: 0.9rem 1.2rem;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    box-shadow: 0 2px 12px #0006;
+    transition: background 0.3s;
+}
+.search-form input[type="text"]:focus {
+    background: rgba(255,255,255,0.2);
+}
+.search-form button {
+    padding: 0.9rem 1.5rem;
+    border-radius: 0 30px 30px 0;
+    border: none;
+    background: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 12px #0006;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+.search-form button:hover {
+    background: linear-gradient(90deg, #333399 0%, #ff00cc 100%);
+}
+.material-icons {
+    font-size: 1.5rem;
+}
+.search-results {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: rgba(30,0,58,0.7);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #0008;
+    padding: 2rem 1.5rem;
+    min-height: 120px;
+    font-size: 1.1rem;
+    display: none;
+}
+.search-result-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #fff2;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    transition: background 0.2s;
+}
+.search-result-item:last-child {
+    border-bottom: none;
+}
+.search-result-item:hover {
+    background: rgba(255,0,204,0.08);
+}
+.song-cover {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px #0006;
+}
+.song-info {
+    flex: 1;
+}
+.song-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffb3f6;
+}
+.song-artist {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.8;
+}
+.song-album {
+    font-size: 0.95rem;
+    color: #b3b3ff;
+    opacity: 0.7;
+}
+.play-btn {
+    background: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0006;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+.play-btn:hover {
+    background: linear-gradient(90deg, #333399 0%, #ff00cc 100%);
+}
+footer {
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.7;
+}
+.dynamo-highlight {
+    color: #ff00cc;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .dynamo-title {
+        font-size: 2.2rem;
+    }
+    .search-form input[type="text"] {
+        width: 170px;
+        font-size: 1rem;
+    }
+    .search-results {
+        padding: 1rem 0.5rem;
+    }
+}
