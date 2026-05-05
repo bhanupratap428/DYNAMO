@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamo - Music Search Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dynamo-style.css">
+</head>
+<body>
+    <div class="dynamo-bg">
+        <header>
+            <h1 class="dynamo-title">Dynamo</h1>
+            <p class="dynamo-tagline">Feel the Beat. Search the World of Music.</p>
+        </header>
+        <main>
+            <form class="search-form" autocomplete="off">
+                <input type="text" id="searchInput" placeholder="Search for songs, artists, albums..." autofocus>
+                <button type="submit"><span class="material-icons">search</span></button>
+            </form>
+            <div id="searchResults" class="search-results"></div>
+        </main>
+        <footer>
+            <p>Powered by <span class="dynamo-highlight">Dynamo</span> &copy; 2026</p>
+        </footer>
+    </div>
+    <script src="https://fonts.googleapis.com/icon?family=Material+Icons"></script>
+    <script src="dynamo-script.js"></script>
+</body>
+</html>
